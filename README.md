@@ -12,14 +12,14 @@
 
 ## 项目截图
 
-| ![PixPin_2025-01-14_12-46-03](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141250376.png) | ![PixPin_2025-01-14_12-48-13](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141251731.png) |
+| ![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092201548.jpg) | ![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092202439.jpg) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![PixPin_2025-01-14_12-49-37](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141251152.png) | ![PixPin_2025-01-14_12-50-16](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141251435.png) |
+| ![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092200671.jpg) | ![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092203655.jpg) |
 
-![PixPin_2025-01-14_12-46-03](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141250376.png) 
-![PixPin_2025-01-14_12-48-13](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141251731.png)
-![PixPin_2025-01-14_12-49-37](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141251152.png) 
-![PixPin_2025-01-14_12-50-16](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141251435.png) 
+![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092201548.jpg)
+![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092202439.jpg)
+![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092200671.jpg)
+![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092203655.jpg)
 
 
 ## 功能概述
