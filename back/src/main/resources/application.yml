@@ -1,0 +1,81 @@
+# dataSource
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/micro_todo?serverTimezone=UTC
+    username: root
+    password: 123456
+  main:
+    banner-mode: off
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+  task:
+    scheduling:
+      pool:
+        size: 5
+      thread-name-prefix: task-reminder-
+      shutdown:
+        await-termination: true
+        await-termination-period: PT10S
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: ${GITHUB_CLIENT_ID}
+            client-secret: ${GITHUB_CLIENT_SECRET}
+            redirect-uri: http://localhost:8080/auth/github/callback
+            scope:
+              - read:user
+              - user:email
+
+# 文件上传配置
+file:
+  upload:
+    path: ./uploads/avatars/  # 使用相对路径
+  access:
+    path: /uploads/avatars/   # 访问路径保持不变
+
+# mp日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+      table-prefix: tb_
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# 应用服务 WEB 访问端口
+server:
+  port: 8088
+
+# 关于openai的配置
+chatgpt:
+  token: sk-tyQfdntRG1hxeDYc5d825a7d34C5448c8eF952De2d584f1b
+  base-url: https://api.gpt.ge/ #可选，默认为https://api.openai.com/，请记住务必以/结尾
+  chat-model: gpt-3.5-turbo #可选
+#  chat-model: gpt-4-turbo-preview #可选
+#  proxy-host: 127.0.0.1 #需要代理时必填
+#  proxy-port: 7890 #需要代理时必填
+  session-expiration-time: 10 #可选，不填则会话永不过期
+#  model: text-davinci-003 #可选
+#  retries: 10 #可选，默认为5
+#  token-strategy-impl: io.github.asleepyfish.strategy.RandomTokenStrategy #可选，默认为RandomTokenStrategy（随机）
+#  alter-tokens: #可选，备选tokens，可以和token-strategy-impl结合，每次请求按策略分配token
+
+jwt:
+  secret: your-secret-key
+  expiration: 86400000  # 24 hours in milliseconds
+
+github:
+  client-id: Ov23ctCzxfKPmtdBWEnn
+  client-secret: 1deb4b9035859b3a25b93f1b39af49eed761b44d
+

@@ -1,0 +1,46 @@
+# 忽略编译生成的目录和文件
+/target/
+
+# 忽略IDE生成的文件和目录
+/.idea/
+/.vscode/
+
+# 忽略Maven和Gradle生成的文件
+*.iml
+*.ipr
+*.iws
+.gradle/
+build/
+out/
+
+# 忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 忽略日志文件
+*.log
+
+# 忽略编译的类文件
+*.class
+
+# 忽略IDE和编辑器配置文件
+*.idea
+*.classpath
+*.project
+*.settings/
+.vscode/
+
+
+# 忽略Spring Boot的日志文件
+logging/
+
+# 忽略缓存和临时文件
+*.tmp
+*.temp
+
+# 忽略Gradle缓存和包文件
+/.gradle
+*.jar
+
+# 忽略环境变量文件
+.env
