@@ -1,6 +1,6 @@
 
 
-# Micro Todo：分治思想赋能的Todolist📝
+# Micro Todo：分治思想赋能的 Todolist 📝
 
 ------
 
@@ -8,14 +8,18 @@
 
 ## 介绍
 
-欢迎使用 **micro todo** 🌟，这是一个集成了AI的高级待办事项应用程序，旨在提升您的任务和时间管理效率。该项目利用了包括Spring Boot、Vue、MyBatis Plus和MySQL在内的强大技术栈，提供无缝和高效的用户体验。
+欢迎使用 **Micro todo** 🌟，这是一个集成了AI的高级待办事项应用程序，旨在提升您的任务和时间管理效率。该项目利用了包括Spring Boot、Vue、MyBatis Plus和MySQL在内的强大技术栈，提供无缝和高效的用户体验。
 
 ## 项目截图
 
-| ![PixPin_2025-01-14_12-46-03](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141250376.png) | ![PixPin_2025-01-14_12-48-13](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141251731.png) |
+| ![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092201548.jpg) | ![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092202439.jpg) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![PixPin_2025-01-14_12-49-37](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141251152.png) | ![PixPin_2025-01-14_12-50-16](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202501141251435.png) |
+| ![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092200671.jpg) | ![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092203655.jpg) |
 
+![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092201548.jpg)
+![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092202439.jpg)
+![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092200671.jpg)
+![](https://cdn.jsdelivr.net/gh/blessonism/web-clipper@main/local/202502092203655.jpg)
 
 
 ## 功能概述
@@ -35,13 +39,13 @@
 
 - 通过集成 LLM，MicroTodo 可以自动将复杂任务拆分成多个更小的子任务，降低用户的认知负荷，提高任务完成效率。
 - **实现**：通过 `OpenAiServiceImpl` 类中的 `getSubTasksDesc` 方法，使用 AI 模型将复杂任务自动拆分成更小的子任务。
-- **示例：**从测试代码 `OpenAiServiceImplTest.java` 可以看到，比如"做蛋炒饭"这样的任务会被拆分成多个子任务。
+- **示例**：从测试代码 `OpenAiServiceImplTest.java` 可以看到，比如"做蛋炒饭"这样的任务会被拆分成多个子任务。
 
 ### 智能任务管理系统 📋
 
 - MicroTodo 提供了一套智能的任务管理机制，包括任务的自动序列化、父子关系管理、状态追踪以及版本控制等，让用户可以更加灵活、高效地管理自己的任务。
 
-- 实现方式：通过 `TaskServiceImpl` 类实现智能的任务排序和管理。
+- **实现方式**：通过 `TaskServiceImpl` 类实现智能的任务排序和管理。
 
 - 特点：
 
@@ -57,7 +61,7 @@
 
 - 通过集成 GPT 模型，MicroTodo 可以根据用户的行为习惯，提供个性化的任务管理建议、时间管理优化建议以及任务规划建议等，帮助用户更好地完成任务，提升效率。
 
-- **实现方式：**通过 `IOpenAiService` 接口提供的 `getAnswer` 方法，集成了 GPT 模型来提供：
+- **实现方式**：通过 `IOpenAiService` 接口提供的 `getAnswer` 方法，集成了 GPT 模型来提供：
 
 - **时间管理提示**：基于任务历史数据，提供优化的时间分配策略，帮助用户更有效地利用时间。
 - **个性化推荐**：通过分析用户的任务完成模式和时间管理习惯，提供个性化的任务和时间管理建议。例如，如果AI检测到用户经常在晚上拖延任务，可能会建议在上午完成重要任务。
@@ -66,7 +70,7 @@
 
 - MicroTodo 采用 Vue.js 构建了一套美观、响应式的现代化前端界面，包括导航栏、侧边栏、任务列表、设置页面等，让用户拥有更加流畅、友好的使用体验。
 
-- **实现方式：**使用 Vue.js 构建响应式界面，包含：
+- **实现方式**：使用 Vue.js 构建响应式界面，包含：
 
   - 导航栏（`NavBar.vue`）
 
@@ -80,13 +84,13 @@
 
 - MicroTodo 支持中英文双语界面，用户可以根据自己的语言偏好自由切换。
 
-- **实现方式：**从项目结构可以看到 `i18n` 目录下有 `zh.js` 和 `en.js`，支持中英文双语界面。
+- **实现方式**：从项目结构可以看到 `i18n` 目录下有 `zh.js` 和 `en.js`，支持中英文双语界面。
 
 ### 用户认证系统 🔐
 
 - MicroTodo 提供了完善的用户认证系统，支持常规登录以及 GitHub OAuth 登录等，并采用安全的密码加密存储机制，保障用户的账号安全。
 
-- **实现方式：**
+- **实现方式**：
 
   - 常规登录（`LoginPage.vue`）
 
@@ -133,7 +137,6 @@
 
    ```sh
    git clone https://github.com/yourusername/MicroTodo.git
-   cd micro-todo
    ```
 
 2. **后端设置 🛠️**：
